@@ -1,5 +1,6 @@
 package nttdata.grupouno.com.microwallet.config;
 
+import nttdata.grupouno.com.microwallet.models.OperationBootCoinModel;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.context.annotation.Bean;
@@ -37,4 +38,28 @@ public class KafkaConsumerConfig {
         factory.setConsumerFactory(userConsumerFactory());
         return factory;
     }
+
+    @Bean
+    public ConsumerFactory<String, OperationBootCoinModel> operationConsumerFactory() {
+        Map<String, Object> config = new HashMap<>();
+
+        config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+        config.put(ConsumerConfig.GROUP_ID_CONFIG, "group_json");
+        config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+        config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
+        config.put(JsonDeserializer.USE_TYPE_INFO_HEADERS,false);
+        config.put(JsonDeserializer.TRUSTED_PACKAGES, "*");
+
+        return new DefaultKafkaConsumerFactory<>(config, new StringDeserializer(),
+                new JsonDeserializer<>(OperationBootCoinModel.class));
+    }
+
+    @Bean
+    public ConcurrentKafkaListenerContainerFactory<String, OperationBootCoinModel> operationKafkaListenerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, OperationBootCoinModel> factory = new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(operationConsumerFactory());
+        return factory;
+    }
+
+
 }

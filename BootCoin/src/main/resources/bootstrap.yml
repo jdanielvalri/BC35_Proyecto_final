@@ -1,6 +1,6 @@
 spring:
   application:
-    name: wallet-service
+    name: bootcoin-service
   cloud:
     config:
       enabled: true

@@ -1,9 +1,8 @@
-package nttdata.grupouno.com.microwallet.util;
+package com.nttdata.bootcoin.util;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -63,6 +62,11 @@ public final class Util {
     public static String generateCartNumber() {
         SecureRandom random = new SecureRandom();
         return "4152000".concat(String.valueOf(random.nextInt(999999999)));
+    }
+
+    public static String generateTrnsactionNumber() {
+        SecureRandom random = new SecureRandom();
+        return "OP_".concat(String.valueOf(random.nextInt(999999999)));
     }
 
 

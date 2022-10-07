@@ -7,10 +7,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/FranciscoCY/Entregable_uno.git
+          uri: https://github.com/jdanielvalri/BC35_Proyecto_final.git
           searchPaths: Config-Data
-          username: FranciscoCY
-          password: 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
+          username: jdanielvalri
+          password: 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
 
   security:
     user:

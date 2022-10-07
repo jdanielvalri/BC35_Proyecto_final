@@ -1,4 +1,4 @@
-package nttdata.grupouno.com.microwallet.config;
+package com.nttdata.bootcoin.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

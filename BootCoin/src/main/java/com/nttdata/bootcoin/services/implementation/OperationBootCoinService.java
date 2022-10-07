@@ -33,7 +33,7 @@ public class OperationBootCoinService implements IOperationBootCoinService {
         if(model.getPayMode() == null || model.getPayMode().isBlank())
             return Mono.empty();
         OperationBootCoinModel data = new OperationBootCoinModel();
-        data.setId(UUID.randomUUID().toString());
+       // data.setId(UUID.randomUUID().toString());
         data.setTransactionNumber(Util.generateTrnsactionNumber());
         data.setState("S");
         data.setExchangeRate(Constants.exchangeRate);
@@ -44,7 +44,7 @@ public class OperationBootCoinService implements IOperationBootCoinService {
         data.setDocumentVendor(model.getDocumentVendor());
         data.setTypDocumentVendor(model.getTypDocumentVendor());
 
-        return operationBootCoinRepositories.save(model)
+        return operationBootCoinRepositories.save(data)
             .doOnSuccess(
                 x ->  
                 {

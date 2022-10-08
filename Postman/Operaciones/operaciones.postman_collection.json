@@ -1,0 +1,200 @@
+{
+	"id": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+	"name": "operaciones",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"name": "Operaciones",
+			"description": "",
+			"order": [],
+			"folders_order": [
+				"bb820352-1a58-0c5d-955c-5679ef542265",
+				"5247ec2f-0361-7660-c34b-2a173e3214e9",
+				"bf56d418-769d-f571-3f85-2a2a5b43020e",
+				"0a56d659-a5b2-db0a-a6a2-56b04c77efa1",
+				"3b6850af-6851-0009-932b-850c7188384a"
+			],
+			"owner": "12726236",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0"
+		},
+		{
+			"name": "accountclient",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"order": [
+				"836eff1c-fe68-fa3f-cab4-96d598f06f4c",
+				"67e3dce0-c1e0-dfd6-02bb-59344525cca1"
+			],
+			"owner": "12726236",
+			"folder": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"folders_order": [],
+			"id": "bf56d418-769d-f571-3f85-2a2a5b43020e"
+		},
+		{
+			"name": "cartclient",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"order": [
+				"79636961-bf39-45b2-f959-a56ff40e085d"
+			],
+			"owner": "12726236",
+			"folder": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"folders_order": [],
+			"id": "0a56d659-a5b2-db0a-a6a2-56b04c77efa1"
+		},
+		{
+			"name": "masteraccount",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"order": [
+				"8343004f-8444-7e19-17d0-750a0fedd14f"
+			],
+			"owner": "12726236",
+			"folder": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"folders_order": [],
+			"id": "bb820352-1a58-0c5d-955c-5679ef542265"
+		},
+		{
+			"name": "movementDetail",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"order": [
+				"bbb63a3e-e4cc-451c-c9ac-d5b9e7c4deff"
+			],
+			"owner": "12726236",
+			"folder": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"folders_order": [],
+			"id": "3b6850af-6851-0009-932b-850c7188384a"
+		},
+		{
+			"name": "typeaccount",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"order": [
+				"515271da-c096-3de3-5f37-89a221451021"
+			],
+			"owner": "12726236",
+			"folder": "472bd225-8296-850d-2e18-0e4331edc8c4",
+			"folders_order": [],
+			"id": "5247ec2f-0361-7660-c34b-2a173e3214e9"
+		}
+	],
+	"folders_order": [
+		"472bd225-8296-850d-2e18-0e4331edc8c4"
+	],
+	"timestamp": 0,
+	"owner": "12726236",
+	"public": false,
+	"requests": [
+		{
+			"id": "515271da-c096-3de3-5f37-89a221451021",
+			"name": "Guardar lista de tipos de cuenta",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "[\r\n    {\r\n        \"code\": \"AHO4\",\r\n        \"description\": \"VIP - Cuenta de ahorro que requiere un monto mínimo de promedio diario cada mes. Adicionalmente, para solicitar este producto el cliente debe tener una tarjeta de crédito con el banco al momento de la creación de la cuenta.\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 99999,\r\n        \"amountCommission\": 0.0,\r\n        \"countPerson\": 99999,\r\n        \"countBusiness\": 0,\r\n        \"amountStart\":0.0,\r\n        \"codeRequired\": \"CRE\"\r\n    },\r\n    {\r\n        \"code\": \"AHO1\",\r\n        \"description\": \"Ahorro: libre de comisión por mantenimiento y con un límite máximo de movimientos mensuales.\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 10,\r\n        \"amountCommission\": 0.0,\r\n        \"countPerson\": 1,\r\n        \"countBusiness\": 0,\r\n        \"amountStart\":0.0\r\n    },\r\n    {\r\n        \"code\": \"AHO2\",\r\n        \"description\": \"Cuenta corriente: posee comisión de mantenimiento y sin límite de movimientos mensuales.\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 99999,\r\n        \"amountCommission\": 1.0,\r\n        \"countPerson\": 1,\r\n        \"countBusiness\": 99999,\r\n        \"amountStart\":10.0\r\n    },\r\n    {\r\n        \"code\": \"AHO3\",\r\n        \"description\": \"Plazo fijo: libre de comisión por mantenimiento, solo permite un movimiento de retiro o depósito en un día específico del mes.\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 0,\r\n        \"amountCommission\": 0.0,\r\n        \"countPerson\": 99999,\r\n        \"countBusiness\": 0,\r\n        \"amountStart\":0.0\r\n    },\r\n    {\r\n        \"code\": \"CRE1\",\r\n        \"description\": \"Personal: solo se permite un solo crédito por persona.\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 0,\r\n        \"amountCommission\": 0.0,\r\n        \"countPerson\": 1,\r\n        \"countBusiness\": 0,\r\n        \"amountStart\":0.0\r\n    },\r\n    {\r\n        \"code\": \"CRE2\",\r\n        \"description\": \"Empresarial: se permite más de un crédito por empresa\",\r\n        \"status\": \"A\",\r\n        \"countLimitOperation\": 0,\r\n        \"amountCommission\": 0.0,\r\n        \"countPerson\": 0,\r\n        \"countBusiness\": 1,\r\n        \"amountStart\":0.0\r\n    }\r\n]",
+			"url": "http://localhost:8001/operation/typeAccount/all",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "959ece23-0aa8-43f3-bcac-7bbcdbfdc4f2",
+			"isFromCollection": true,
+			"collectionRequestId": "515271da-c096-3de3-5f37-89a221451021",
+			"folder": "5247ec2f-0361-7660-c34b-2a173e3214e9"
+		},
+		{
+			"id": "67e3dce0-c1e0-dfd6-02bb-59344525cca1",
+			"name": "get saldo principal account",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"headerData": [],
+			"collection_id": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"folder": "bf56d418-769d-f571-3f85-2a2a5b43020e",
+			"isFromCollection": true,
+			"collectionRequestId": "67e3dce0-c1e0-dfd6-02bb-59344525cca1"
+		},
+		{
+			"id": "79636961-bf39-45b2-f959-a56ff40e085d",
+			"name": "Registro nueva tarjeta",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n  \"codeClient\": \"895b3346-5091-4465-b6ed-7b9f3b8411f8\",\r\n  \"typeCart\": \"AHO\"\r\n}",
+			"url": "http://localhost:8001/operation/cartClient/createCard",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "959ece23-0aa8-43f3-bcac-7bbcdbfdc4f2",
+			"folder": "0a56d659-a5b2-db0a-a6a2-56b04c77efa1"
+		},
+		{
+			"id": "8343004f-8444-7e19-17d0-750a0fedd14f",
+			"name": "Registro cuenta banco - activo",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n    \"accountModel\":{\r\n        \"numberAccount\":\"1234567809\",\r\n        \"type\": {\r\n            \"code\":\"AHO3\"\r\n        },\r\n        \"startDate\":\"2022.09.16\",\r\n        \"status\":\"A\",\r\n        \"endDate\":null,\r\n        \"amount\":250.50,\r\n        \"coinType\":\"PEN\"\r\n    },\r\n    \"clientModel\":{\r\n        \"codeClient\":\"895b3346-5091-4465-b6ed-7b9f3b8411f8\",\r\n        \"typeClient\":\"N\"\r\n    }\r\n}",
+			"url": "http://localhost:8001/operation/account/bank",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "959ece23-0aa8-43f3-bcac-7bbcdbfdc4f2",
+			"folder": "bb820352-1a58-0c5d-955c-5679ef542265"
+		},
+		{
+			"id": "836eff1c-fe68-fa3f-cab4-96d598f06f4c",
+			"name": "asignar cuenta principal",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"headerData": [],
+			"collection_id": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"isLastRequest": true,
+			"folder": "bf56d418-769d-f571-3f85-2a2a5b43020e",
+			"isFromCollection": true,
+			"collectionRequestId": "836eff1c-fe68-fa3f-cab4-96d598f06f4c"
+		},
+		{
+			"id": "bbb63a3e-e4cc-451c-c9ac-d5b9e7c4deff",
+			"name": "movement Card Debit",
+			"description": "",
+			"collectionId": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"headerData": [],
+			"collection_id": "114ff538-1daf-9770-c6f6-06a6e6cd8eb0",
+			"folder": "3b6850af-6851-0009-932b-850c7188384a",
+			"isFromCollection": true,
+			"collectionRequestId": "bbb63a3e-e4cc-451c-c9ac-d5b9e7c4deff"
+		}
+	]
+}

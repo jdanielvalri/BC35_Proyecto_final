@@ -1,0 +1,84 @@
+{
+	"id": "d3a0563f-194f-cbbd-f6b3-56d3221671f4",
+	"name": "wallet",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "5453f39c-29dd-5107-bdec-2f219b447286",
+			"name": "wallet",
+			"description": "",
+			"order": [
+				"1586c5ae-ce42-761a-ee5f-65b1411744f8",
+				"06083cfc-5710-7e34-d558-b0d52424052c",
+				"215d70aa-eabd-d660-fe5d-6df23e6c4f88"
+			],
+			"folders_order": [],
+			"owner": "12726236",
+			"collectionId": "d3a0563f-194f-cbbd-f6b3-56d3221671f4"
+		}
+	],
+	"folders_order": [
+		"5453f39c-29dd-5107-bdec-2f219b447286"
+	],
+	"timestamp": 0,
+	"owner": "12726236",
+	"public": false,
+	"requests": [
+		{
+			"id": "06083cfc-5710-7e34-d558-b0d52424052c",
+			"name": "register client wallet",
+			"description": "",
+			"collectionId": "d3a0563f-194f-cbbd-f6b3-56d3221671f4",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n    \"numberDocument\": \"1234567\",\r\n    \"typeDocument\": \"DNI\",\r\n    \"numberPhone\": \"900000001\",\r\n    \"imeiPhone\":\"123456-465\",\r\n    \"email\":\"test@gmail.com\",\r\n    \"amount\": 0.00\r\n}",
+			"url": "http://localhost:8001/wallet/client/",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "959ece23-0aa8-43f3-bcac-7bbcdbfdc4f2",
+			"isFromCollection": true,
+			"collectionRequestId": "b8a051f2-f542-33e2-83ac-2ad1da0f6f3d",
+			"folder": "5453f39c-29dd-5107-bdec-2f219b447286"
+		},
+		{
+			"id": "1586c5ae-ce42-761a-ee5f-65b1411744f8",
+			"name": "movimiento",
+			"description": "",
+			"collectionId": "d3a0563f-194f-cbbd-f6b3-56d3221671f4",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "",
+			"responses": [],
+			"headerData": [],
+			"collection_id": "d3a0563f-194f-cbbd-f6b3-56d3221671f4",
+			"folder": "5453f39c-29dd-5107-bdec-2f219b447286"
+		},
+		{
+			"id": "215d70aa-eabd-d660-fe5d-6df23e6c4f88",
+			"name": "registro redis -type document",
+			"description": "",
+			"collectionId": "d3a0563f-194f-cbbd-f6b3-56d3221671f4",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n    \"id\":\"EXT\",\r\n    \"title\":\"EXT\",\r\n    \"description\":\"Carnet de extranjeria\"\r\n}",
+			"url": "http://localhost:8001/wallet/",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "959ece23-0aa8-43f3-bcac-7bbcdbfdc4f2",
+			"isFromCollection": true,
+			"collectionRequestId": "347a2aa0-6742-ebab-de39-62f234455634",
+			"folder": "5453f39c-29dd-5107-bdec-2f219b447286"
+		}
+	]
+}

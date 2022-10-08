@@ -1,393 +1,220 @@
 {
-	"info": {
-		"_postman_id": "9cdac756-ae2d-4730-9c80-2e302d81635d",
-		"name": "Clients",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
+	"id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+	"name": "clients",
+	"description": "",
+	"order": [],
+	"folders": [
 		{
-			"name": "Get Clients Juridicos",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/legal",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"legal"
-					]
-				}
-			},
-			"response": []
+			"id": "ef6a04fb-dd0a-b689-ab21-655087f0876c",
+			"name": "Add",
+			"description": "",
+			"order": [
+				"ce657325-020b-8cd3-7155-89d5b007b268",
+				"752d029b-fd0c-ad39-d953-0cf0ce956718"
+			],
+			"folders_order": [],
+			"owner": "12726236",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21"
 		},
 		{
-			"name": "Get Clients Natural",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/natural",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"natural"
-					]
-				}
-			},
-			"response": []
+			"id": "15a012f1-5bb1-9d2e-04dc-898ad143e485",
+			"name": "Delete",
+			"description": "",
+			"order": [
+				"43dc0baa-a0bb-88c9-8ad5-5085dc073a45",
+				"9581cfa6-aeba-47bc-7af0-a7773aa5b635"
+			],
+			"folders_order": [],
+			"owner": "12726236",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21"
 		},
 		{
-			"name": "Get Clients Natural (ID)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/natural/20a503cb-1b6c-4d52-aa0d-dd4d34a08a8b",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"natural",
-						"20a503cb-1b6c-4d52-aa0d-dd4d34a08a8b"
-					]
-				}
-			},
-			"response": []
+			"id": "f61f206f-6f72-fd12-7f97-4ae4018906e5",
+			"name": "Find",
+			"description": "",
+			"order": [
+				"9cb22f0a-c292-8d96-4535-47b21f0bbc60",
+				"6b226a1c-875e-a1a0-2f5d-9a207d0492c3",
+				"ebd6bbd7-59e7-943a-1722-205a024687a6"
+			],
+			"folders_order": [],
+			"owner": "12726236",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21"
 		},
 		{
-			"name": "Get Clients Natural (DOCUMENT NUMBER)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/natural/documentNumber/75906047",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"natural",
-						"documentNumber",
-						"75906047"
-					]
-				}
-			},
-			"response": []
+			"id": "3263885d-129a-1ef9-316e-b75ffd10abd9",
+			"name": "Update",
+			"description": "",
+			"order": [
+				"66d997d3-3659-45fd-d11e-74100796ac39"
+			],
+			"folders_order": [],
+			"owner": "12726236",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21"
 		},
 		{
-			"name": "Get Clients Natural (NAMES)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/natural/documentNumber/75906047",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"natural",
-						"documentNumber",
-						"75906047"
-					]
-				}
-			},
-			"response": []
+			"id": "507eb8e6-9a42-d42b-e99d-cbeedb775431",
+			"name": "clients",
+			"description": "",
+			"order": [],
+			"folders_order": [
+				"3263885d-129a-1ef9-316e-b75ffd10abd9",
+				"15a012f1-5bb1-9d2e-04dc-898ad143e485",
+				"ef6a04fb-dd0a-b689-ab21-655087f0876c",
+				"f61f206f-6f72-fd12-7f97-4ae4018906e5"
+			],
+			"owner": "12726236",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21"
+		}
+	],
+	"folders_order": [
+		"507eb8e6-9a42-d42b-e99d-cbeedb775431"
+	],
+	"timestamp": 0,
+	"owner": "12726236",
+	"public": false,
+	"requests": [
+		{
+			"id": "43dc0baa-a0bb-88c9-8ad5-5085dc073a45",
+			"name": "deleteNaturalbyId",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "DELETE",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "localhost:8002/api/naturalPerson/5e245c68-9ef3-4fc7-ab4b-bc9e06e86b3b",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "15a012f1-5bb1-9d2e-04dc-898ad143e485"
 		},
 		{
-			"name": "Get Clients Juridicos (ID)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/legal/caee77b0-b3dc-43ab-ad01-f05f1e378c78",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"legal",
-						"caee77b0-b3dc-43ab-ad01-f05f1e378c78"
-					]
-				}
-			},
-			"response": []
+			"id": "66d997d3-3659-45fd-d11e-74100796ac39",
+			"name": "updateNatural",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "PUT",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n        \"id\": \"789794ca-0041-4d79-93fc-4603179ab7a8\",\r\n        \"documentNumber\": 45162478,\r\n        \"documentType\": 1,\r\n        \"names\": \"Pedro\",\r\n        \"lastNames\": \"Rojas Talavera\",\r\n        \"gender\": \"masculino\",\r\n        \"mail\": \"pedro@mail.com\"\r\n    }",
+			"url": "localhost:8002/api/naturalPerson",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "3263885d-129a-1ef9-316e-b75ffd10abd9"
 		},
 		{
-			"name": "Get Clients Juridicos (RUC)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/legal/ruc/2337164317",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"legal",
-						"ruc",
-						"2337164317"
-					]
-				}
-			},
-			"response": []
+			"id": "6b226a1c-875e-a1a0-2f5d-9a207d0492c3",
+			"name": "findAllNatural",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "localhost:8002/api/clients/natural",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "f61f206f-6f72-fd12-7f97-4ae4018906e5"
 		},
 		{
-			"name": "Get Clients Juridicos (BUSINESS NAME)",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":1,\r\n    \"idTypePerson\":1,\r\n    \"idPerson\":32,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients/legal/businessName/Castillo Rodriguez S.A.",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"legal",
-						"businessName",
-						"Castillo Rodriguez S.A."
-					]
-				}
-			},
-			"response": []
+			"id": "752d029b-fd0c-ad39-d953-0cf0ce956718",
+			"name": "addLegal",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\"ruc\": 20100789123,\r\n    \"businessName\": \"EMPRESA CUATRO\",\r\n    \"mail\": \"cautt@mail.com\"\r\n}",
+			"url": "localhost:8002/api/legalPerson",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "ef6a04fb-dd0a-b689-ab21-655087f0876c"
 		},
 		{
-			"name": "Get Clients Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8002/api/clients/2",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"2"
-					]
-				}
-			},
-			"response": []
+			"id": "9581cfa6-aeba-47bc-7af0-a7773aa5b635",
+			"name": "deleteClient",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "DELETE",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n\t\t\"idTypePerson\": 1,\r\n\t\t\"idPerson\": 70859655,\r\n\t\t\"mail\": \"miguel@mail.com\"\r\n\t}",
+			"url": "localhost:8002/api/clients/edf7b4ba-1086-4177-a79c-1ee5de9af42b",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "15a012f1-5bb1-9d2e-04dc-898ad143e485"
 		},
 		{
-			"name": "Get Clients IdTypePerson",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8002/api/clients/findByIdTypePerson/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"findByIdTypePerson",
-						"1"
-					]
-				}
-			},
-			"response": []
+			"id": "9cb22f0a-c292-8d96-4535-47b21f0bbc60",
+			"name": "findAllLegal",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "GET",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "",
+			"url": "localhost:8002/api/clients/legal",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "f61f206f-6f72-fd12-7f97-4ae4018906e5"
 		},
 		{
-			"name": "Get Clients IdPerson",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8002/api/clients/findByIdTypePerson/1",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients",
-						"findByIdTypePerson",
-						"1"
-					]
-				}
-			},
-			"response": []
+			"id": "ce657325-020b-8cd3-7155-89d5b007b268",
+			"name": "addNatural",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "POST",
+			"headers": "",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\r\n         \"documentNumber\": 65842596,\r\n        \"documentType\": 1,\r\n        \"names\": \"Miguel\",\r\n        \"lastNames\": \"Diaz Valdez\",\r\n        \"gender\": \"masculino\",\r\n        \"mail\": \"miguel@gmail.com\"\r\n    }",
+			"url": "localhost:8002/api/naturalPerson",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "ef6a04fb-dd0a-b689-ab21-655087f0876c"
 		},
 		{
-			"name": "Post Clients",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"id\":4,\r\n    \"idTypePerson\":2,\r\n    \"idPerson\":3,\r\n    \"mail\":\"123123@asdas\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8002/api/clients",
-					"host": [
-						"localhost"
-					],
-					"port": "8002",
-					"path": [
-						"api",
-						"clients"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Put Product Copy",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\":\"Wallabe Men's Suede Shoe\",\r\n    \"description\":\"Comfort and tendency do not have to be at odds. This suede wallabee style shoe is all you need for marathon work days. With soft suede design and stitched details, it is perfect to combine with jeans\",\r\n    \"price\":32,\r\n    \"category\":{\"id\":1,\"name\":\"shoes\"}\r\n\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8091/products/4",
-					"host": [
-						"localhost"
-					],
-					"port": "8091",
-					"path": [
-						"products",
-						"4"
-					]
-				}
-			},
-			"response": []
+			"id": "ebd6bbd7-59e7-943a-1722-205a024687a6",
+			"name": "findNaturalByDNI",
+			"description": "",
+			"collectionId": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"method": "GET",
+			"headers": "",
+			"data": [],
+			"rawModeData": "",
+			"url": "localhost:8002/api/clients/natural/documentNumber/23457458",
+			"responses": [],
+			"pathVariableData": [],
+			"queryParams": [],
+			"headerData": [],
+			"collection_id": "f2e29a18-15b9-1d0f-f7a5-bedb1101cd21",
+			"folder": "f61f206f-6f72-fd12-7f97-4ae4018906e5"
 		}
 	]
 }
